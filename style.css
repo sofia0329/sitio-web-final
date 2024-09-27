@@ -43,6 +43,8 @@ h1 { /* Estilo para el título h1 */
 
 h2 { /* Estilo para subtítulos h2 */
     font-size: 1.5em; /* Tamaño de fuente mediano (1.5em) */
+    font-weight: lighter;
+    color: aquamarine;
 }
 
 p { /* Estilo para párrafos p */
