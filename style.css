@@ -6,11 +6,11 @@ html { /* Aplica a todos los elementos y al elemento html */
   html, body { /* Estilos para el html y el body */
       margin: 0; /* Elimina el margen por defecto */
       padding: 0; /* Elimina el padding por defecto */
-        background-color: #07997cb7; /* Color de fondo */
-        background-image: radial-gradient(circle, rgba(54, 239, 209, 0.252) 20%, transparent 20%);
+        background-color: #05866db7; /* Color de fondo */
+        background-image: radial-gradient(circle, rgba(12, 100, 85, 0.252) 20%, transparent 20%);
         background-size: 35px 45px; /* Tamaño de cada círculo */
         background-position: 0 0; /* Posición inicial */
-        height: 50vh; /* Altura completa de la ventana */
+        height: 30vh; /* Altura completa de la ventana */
   }
   
   main { /* Estilo para el elemento main */
@@ -89,6 +89,13 @@ p { /* Estilo para párrafos p */
     
 }
 
+.button-container {
+    grid-area: button;
+    display: flex;               /* Activa el flexbox */
+    justify-content: center;     /* Centra horizontalmente el contenido */
+    margin-top: 20px 20;           /* Espacio entre el párrafo y el botón */
+}
+
 .proyectos { /* Estilo para el contenedor con clase proyectos */
     display: flex; /* Activa el grid layout */
     justify-content: center; /* Alinea las imágenes al inicio */
@@ -139,12 +146,7 @@ p { /* Estilo para párrafos p */
     text-align: center; /* Centra el texto dentro del contenido */
 }
 
-.button-container {
-    grid-area: button;
-    display: flex;               /* Activa el flexbox */
-    justify-content: center;     /* Centra horizontalmente el contenido */
-    margin-top: 20px 0;           /* Espacio entre el párrafo y el botón */
-}
+
 .box {
     border-style: solid;
     border-width: 1px;
