@@ -8,7 +8,7 @@ html { /* Aplica a todos los elementos y al elemento html */
       padding: 0; /* Elimina el padding por defecto */
         background-color: #7af1d9b7; /* Color de fondo */
         background-image: radial-gradient(circle, rgba(54, 239, 209, 0.252) 20%, transparent 20%);
-        background-size: 50px 50px; /* Tamaño de cada círculo */
+        background-size: 35px 45px; /* Tamaño de cada círculo */
         background-position: 0 0; /* Posición inicial */
   }
   
