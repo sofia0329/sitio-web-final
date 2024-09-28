@@ -70,6 +70,7 @@ font-style: normal
 p { /* Estilo para párrafos p */
     font-size: 18px; /* Tamaño de fuente de 18px */
     text-align: center;
+    margin: 0;
 }
 .title { /* Estilo para el elemento con clase title */
     grid-area: title; /* Asigna este elemento al área 'title' */
@@ -138,17 +139,18 @@ p { /* Estilo para párrafos p */
 }
 
 .button-container {
-    align-self: flex-start; /* Alinea el botón a la izquierda */
-    margin-top: 20px;      /* Espacio entre el párrafo y el botón */
-      
-font-family: "Caveat", cursive;
-font-style: normal
+    display: flex;               /* Activa el flexbox */
+    justify-content: center;     /* Centra horizontalmente el contenido */
+    align-items: center;         /* Centra verticalmente el contenido */
+    margin-top: 20px;           /* Espacio entre el párrafo y el botón */
 }
 .box {
     border-style: solid;
     border-width: 1px;
     border-radius: 30%;
-    display: block;
+    display: flex;
+    justify-content: center;      /* Centra el texto horizontalmente */
+    align-items: center;         /* Centra el texto verticalmente */
     width: 100px;
     height: 100px;
     background-color: #0dd3ac;
