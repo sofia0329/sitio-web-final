@@ -56,6 +56,11 @@ font-weight: <weight>;
 font-style: normal
 
 }
+.container {
+    display: grid;
+    place-items: center;   /* Centra el contenido horizontal y verticalmente */
+    height: 100vh;         /* Altura del contenedor */
+}
 
 p { /* Estilo para párrafos p */
     font-size: 18px; /* Tamaño de fuente de 18px */
