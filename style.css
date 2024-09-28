@@ -138,22 +138,27 @@ p { /* Estilo para párrafos p */
     align-self: flex-start; /* Alinea el botón a la izquierda */
     margin-top: 20px;      /* Espacio entre el párrafo y el botón */
 }
-button { /* Estilo para los botones */
-    border-radius: 30px; /* Bordes redondeados */
-    padding: 10px 20px; /* Padding de 10px arriba y abajo, 20px a los lados */
-    background-color: rgb(4, 76, 17); /* Color de fondo gris claro */
-    font-size: 14px; /* Tamaño de fuente de 14px */
-    font-weight: bold; /* Texto en negrita */
-    color: #68caac; /* Texto naranja */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cursor de mano al pasar por encima */
-}
-
-button:hover { /* Estilo hover para los botones */
-    background-color: #05f8d8; /* Fondo cambia a naranja */
-    color: rgb(5, 80, 61); /* Texto cambia a negro */
-    font-weight: bold; /* Mantiene el texto en negrita */
-}
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0dd3ac;
+    transition:
+      width 2s,
+      height 2s,
+      background-color 2s,
+      rotate 2s;
+  }
+  
+  .box:hover {
+    background-color: #07634b;
+    width: 200px;
+    height: 200px;
+    rotate: 180deg;
+  }
+  
 
 @media (max-width: 900px) { /* Estilo responsivo para pantallas pequeñas */
     main { /* Ajustes en el elemento main */
