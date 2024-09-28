@@ -137,6 +137,9 @@ p { /* Estilo para párrafos p */
 .button-container {
     align-self: flex-start; /* Alinea el botón a la izquierda */
     margin-top: 20px;      /* Espacio entre el párrafo y el botón */
+      
+font-family: "Caveat", cursive;
+font-style: normal
 }
 .box {
     border-style: solid;
