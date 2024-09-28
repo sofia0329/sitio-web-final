@@ -36,7 +36,11 @@ html { /* Aplica a todos los elementos y al elemento html */
 h1 { /* Estilo para el título h1 */
     font-size: 4em; /* Tamaño de fuente grande (4em) */
     font-weight: bold; /* Fuente en negrita */
-    color: #06926f; /* Color naranja */
+    color: #04916ebc; /* Color naranja */
+    text-shadow:
+    1px 1px 1px rgb(2, 68, 55),
+    2px 2px 1px rgb(2, 62, 38);
+  text-align: center;
 }
 
 h2 { /* Estilo para subtítulos h2 */
@@ -94,19 +98,19 @@ p { /* Estilo para párrafos p */
 }
 
 button { /* Estilo para los botones */
-    border-radius: 20px; /* Bordes redondeados */
+    border-radius: 30px; /* Bordes redondeados */
     padding: 10px 20px; /* Padding de 10px arriba y abajo, 20px a los lados */
     background-color: rgb(4, 76, 17); /* Color de fondo gris claro */
     font-size: 14px; /* Tamaño de fuente de 14px */
     font-weight: bold; /* Texto en negrita */
-    color: #F87A05; /* Texto naranja */
+    color: #68caac; /* Texto naranja */
     border: none; /* Sin borde */
     cursor: pointer; /* Cursor de mano al pasar por encima */
 }
 
 button:hover { /* Estilo hover para los botones */
-    background-color: #F87A05; /* Fondo cambia a naranja */
-    color: black; /* Texto cambia a negro */
+    background-color: #05f8d8; /* Fondo cambia a naranja */
+    color: rgb(5, 80, 61); /* Texto cambia a negro */
     font-weight: bold; /* Mantiene el texto en negrita */
 }
 
