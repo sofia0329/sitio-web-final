@@ -10,6 +10,7 @@ html { /* Aplica a todos los elementos y al elemento html */
         background-image: radial-gradient(circle, rgba(54, 239, 209, 0.252) 20%, transparent 20%);
         background-size: 35px 45px; /* Tamaño de cada círculo */
         background-position: 0 0; /* Posición inicial */
+        height: 80vh; /* Altura completa de la ventana */
   }
   
   main { /* Estilo para el elemento main */
