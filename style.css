@@ -142,7 +142,6 @@ p { /* Estilo para párrafos p */
 .button-container {
     display: flex;               /* Activa el flexbox */
     justify-content: center;     /* Centra horizontalmente el contenido */
-    align-items: center;         /* Centra verticalmente el contenido */
     margin-top: 20px;           /* Espacio entre el párrafo y el botón */
 }
 .box {
