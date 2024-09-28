@@ -78,13 +78,20 @@ p { /* Estilo para párrafos p */
 }
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
-    display: grid; /* Activa el grid layout */
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
-    column-gap: 30px; /* Espacio entre columnas de 30px */
-    row-gap: 20px; /* Espacio entre filas de 20px */
-    height: 450px; /* Altura fija de 450px */
-    overflow-y: auto; /* Activa el scroll vertical si es necesario */
-    text-align: center; /* Centra el texto horizontalmente */
+    display: flex; /* Activa el grid layout */
+    justify-content: flex-start; /* Alinea las imágenes al inicio */
+    overflow-x: scroll; /* Activa el desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
+    gap: 30px; /* Espacio entre las imágenes */
+    height: 250px; /* Altura del contenedor ajustada */
+    align-items: flex-end; /* Alinea las imágenes al fondo */
+    padding-bottom: 20px; /* Espacio en la parte inferior */
+    position: fixed; /* Fija el contenedor al fondo de la página */
+    bottom: 0; /* Alineado al fondo */
+    width: 100%; /* Que ocupe todo el ancho */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    
+
 }
 
 .proyectos nav { /* Estilo para el elemento nav dentro de .proyectos */
@@ -92,10 +99,10 @@ p { /* Estilo para párrafos p */
 }
 
 .proyectos a { /* Estilo para los enlaces dentro de .proyectos */
-    display: grid; /* El enlace ocupa toda la columna */
-    grid-template-columns: repeat(2, 1fr);  /* 2 columnas de igual tamaño */
-  gap: 10px;  /* Espacio entre las imágenes */
-  justify-items: center;  /* Centra las imágenes dentro de las celdas */
+    display: inline-block; /* Las imágenes se muestran en fila */
+    flex: 0 0 45%; /* Cada imagen ocupa el 45% del ancho del contenedor */
+    scroll-snap-align: start; /* Alinea cada imagen con el inicio del contenedor al deslizar */
+    text-align: center;
 }
 
 .proyectos nav a img { /* Estilo para las imágenes dentro de los enlaces en .proyectos */
