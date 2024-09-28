@@ -48,11 +48,8 @@ h2 { /* Estilo para subtítulos h2 */
     font-weight: lighter;
     color: rgb(13, 101, 97);
     text-align: center;
-    // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 700
+   
 font-family: "Caveat", cursive;
-font-optical-sizing: auto;
-font-weight: <weight>;
 font-style: normal
 
 }
@@ -80,6 +77,9 @@ p { /* Estilo para párrafos p */
     padding: 0; /* Sin padding */
     text-align: center; /* Justifica el texto */
     word-break: normal; /* Permite el corte de palabras natural */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Centra horizontalmente */
 }
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
