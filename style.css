@@ -15,14 +15,16 @@ html { /* Aplica a todos los elementos y al elemento html */
   
   main { /* Estilo para el elemento main */
       display: grid; /* Activa el grid layout */
-      grid-template-columns: 1fr 2fr; /* Define dos columnas con proporciones 1:2 */
-      grid-template-rows: auto auto; /* Define dos filas de altura automática */
+      grid-template-columns: 1fr; /* Define una columnas con proporciones 1:2 */
+      grid-template-rows: auto auto auto; /* Define dos filas de altura automática */
       margin-left: 50px; /* Márgen izquierdo de 50px */
       margin-right: 50px; /* Márgen derecho de 50px */
       column-gap: 20px; /* Espacio entre columnas de 20px */
       grid-template-areas: /* Define áreas específicas dentro del grid */
-          "title title" /* Título ocupa ambas columnas */
-          "contenido proyectos"; /* Contenido y proyectos ocupan cada una una columna */
+          "title" /* Título ocupa ambas columnas */
+          "contenido" 
+          "proyectos"; /* Contenido y proyectos ocupan cada una una columna */
+          
   }
 
   #left { /* Estilo para el elemento con id left */
@@ -99,11 +101,12 @@ p { /* Estilo para párrafos p */
 .proyectos { /* Estilo para el contenedor con clase proyectos */
     display: flex; /* Activa el grid layout */
     justify-content: center; /* Alinea las imágenes al inicio */
+    flex-direction: column;
     overflow-x: scroll; /* Activa el desplazamiento horizontal */
     scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
     gap: 30px; /* Espacio entre las imágenes */
     height: 250px; /* Altura del contenedor ajustada */
-    align-items: flex-end; /* Alinea las imágenes al fondo */
+    align-items: center; /* Alinea las imágenes al fondo */
     padding-bottom: 20px; /* Espacio en la parte inferior */
     width: 90%; /* Que ocupe todo el ancho */
     margin: 0 auto;
