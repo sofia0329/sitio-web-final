@@ -41,6 +41,10 @@ h1 { /* Estilo para el título h1 */
     1px 1px 1px rgb(2, 68, 55),
     2px 2px 1px rgb(2, 62, 38);
   text-align: center;
+
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 { /* Estilo para subtítulos h2 */
@@ -54,9 +58,10 @@ font-style: normal
 
 }
 .container {
-    display: grid;
-    place-items: center;   /* Centra el contenido horizontal y verticalmente */
-    height: 100vh;         /* Altura del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
 }
 
 p { /* Estilo para párrafos p */
@@ -74,12 +79,9 @@ p { /* Estilo para párrafos p */
 }
 
 .content { /* Estilo para el elemento con clase content */
-    padding: 0; /* Sin padding */
+    
     text-align: center; /* Justifica el texto */
-    word-break: normal; /* Permite el corte de palabras natural */
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; /* Centra horizontalmente */
+    
 }
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
@@ -121,7 +123,21 @@ p { /* Estilo para párrafos p */
     filter: blur(5px); /* Desenfoque de 5px al pasar el ratón */
     opacity: 90%; /* Reducción de la opacidad al 90% */
 }
+.container {
+    display: flex;              /* Activa el flexbox */
+    flex-direction: column;     /* Organiza los elementos en columna */
+    align-items: center;        /* Centra horizontalmente */
+    height: 100vh;             /* Altura del contenedor */
+}
 
+.content {
+    text-align: center; /* Centra el texto dentro del contenido */
+}
+
+.button-container {
+    align-self: flex-start; /* Alinea el botón a la izquierda */
+    margin-top: 20px;      /* Espacio entre el párrafo y el botón */
+}
 button { /* Estilo para los botones */
     border-radius: 30px; /* Bordes redondeados */
     padding: 10px 20px; /* Padding de 10px arriba y abajo, 20px a los lados */
