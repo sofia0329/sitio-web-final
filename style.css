@@ -79,17 +79,17 @@ p { /* Estilo para párrafos p */
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
     display: flex; /* Activa el grid layout */
-    justify-content: flex-start; /* Alinea las imágenes al inicio */
+    justify-content: ce; /* Alinea las imágenes al inicio */
     overflow-x: scroll; /* Activa el desplazamiento horizontal */
     scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
-    gap: 30px; /* Espacio entre las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
     height: 250px; /* Altura del contenedor ajustada */
     align-items: flex-end; /* Alinea las imágenes al fondo */
     padding-bottom: 20px; /* Espacio en la parte inferior */
     position: fixed; /* Fija el contenedor al fondo de la página */
     bottom: 0; /* Alineado al fondo */
     width: 100%; /* Que ocupe todo el ancho */
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
     
 
 }
