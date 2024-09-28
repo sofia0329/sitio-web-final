@@ -95,26 +95,24 @@ p { /* Estilo para párrafos p */
     justify-content: center;     /* Centra horizontalmente el contenido */
     margin-top: 20px 20;           /* Espacio entre el párrafo y el botón */
 }
-
-.proyectos { /* Estilo para el contenedor con clase proyectos */
-    display: flex; /* Activa el grid layout */
-    justify-content: center; /* Alinea las imágenes al inicio */
-    overflow-x: scroll; /* Activa el desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
-    gap: 30px; /* Espacio entre las imágenes */
-    height: 250px; /* Altura del contenedor ajustada */
-    align-items: flex-end; /* Alinea las imágenes al fondo */
-    padding-bottom: 20px; /* Espacio en la parte inferior */
-    width: 90%; /* Que ocupe todo el ancho */
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
-    
-
+.proyectos-container {
+    display: flex;               /* Activar flexbox para el contenedor de proyectos */
+    justify-content: center;     /* Centra horizontalmente el contenido */
+    margin-top: 20px;           /* Espacio arriba del contenedor de proyectos */
 }
 
-.proyectos nav { /* Estilo para el elemento nav dentro de .proyectos */
-    display: contents; /* Los hijos se comportan como si estuvieran directamente en el grid */
+.proyectos {
+    display: flex;               /* Activa el flexbox para el contenedor de proyectos */
+    justify-content: center;     /* Centra los enlaces de proyectos */
+    gap: 20px;                  /* Espacio entre las imágenes */
+    flex-wrap: wrap;            /* Permite que las imágenes se ajusten si es necesario */
 }
+
+.proyectos nav a {
+    display: inline-block;       /* Asegura que los enlaces se comporten como bloques en línea */
+    text-align: center;          /* Centra el texto dentro de los enlaces */
+}
+
 
 .proyectos a { /* Estilo para los enlaces dentro de .proyectos */
     display: inline-block; /* Las imágenes se muestran en fila */
