@@ -88,7 +88,7 @@ p { /* Estilo para párrafos p */
     display: flex;               /* Activa el flexbox */
     align-items: center;
     justify-content: center;     /* Centra horizontalmente el contenido */
-    margin-top: 20px;           /* Espacio entre el párrafo y el botón */
+    margin-top: 10px;           /* Espacio entre el párrafo y el botón */
 }
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
@@ -104,7 +104,7 @@ p { /* Estilo para párrafos p */
     width: 40%; /* Que ocupe todo el ancho */
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
-    margin-top: 20px; 
+    margin-top: 10px; 
 
 }
 
