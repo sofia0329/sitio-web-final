@@ -73,16 +73,16 @@ p { /* Estilo para párrafos p */
 
 .content { /* Estilo para el elemento con clase content */
     padding: 0; /* Sin padding */
-    text-align: justify; /* Justifica el texto */
+    text-align: center; /* Justifica el texto */
     word-break: normal; /* Permite el corte de palabras natural */
 }
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
     display: flex; /* Activa el grid layout */
-    justify-content: ce; /* Alinea las imágenes al inicio */
+    justify-content: center; /* Alinea las imágenes al inicio */
     overflow-x: scroll; /* Activa el desplazamiento horizontal */
     scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
-    gap: 20px; /* Espacio entre las imágenes */
+    gap: 30px; /* Espacio entre las imágenes */
     height: 250px; /* Altura del contenedor ajustada */
     align-items: flex-end; /* Alinea las imágenes al fondo */
     padding-bottom: 20px; /* Espacio en la parte inferior */
