@@ -95,6 +95,7 @@ p { /* Estilo para párrafos p */
     justify-content: center;     /* Centra horizontalmente el contenido */
     margin-top: 10px;           /* Espacio entre el párrafo y el botón */
     margin-bottom: 10px;
+    display: inline-block; /* Asegúrate de que el enlace se comporte como un bloque en línea */
 }
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
