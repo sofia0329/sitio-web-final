@@ -68,6 +68,10 @@ p { /* Estilo para párrafos p */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
+
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .title { /* Estilo para el elemento con clase title */
     grid-area: title; /* Asigna este elemento al área 'title' */
@@ -159,6 +163,12 @@ p { /* Estilo para párrafos p */
       height 2s,
       background-color 2s,
       rotate 2s;
+
+         /* Cambiar la tipografía del botón */
+    font-family: 'Caveat', cursive; /* Aquí defines la nueva fuente */
+    font-size: 16px; /* Ajusta el tamaño de la fuente según prefieras */
+    font-weight: bold; /* Cambia el grosor de la fuente si es necesario */
+    color: rgb(2, 54, 31); /* Cambia el color del texto del botón */
   }
   
   .box:hover {
