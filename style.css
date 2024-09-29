@@ -66,7 +66,8 @@ font-style: normal
 p { /* Estilo para párrafos p */
     font-size: 18px; /* Tamaño de fuente de 18px */
     text-align: center;
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .title { /* Estilo para el elemento con clase title */
     grid-area: title; /* Asigna este elemento al área 'title' */
@@ -89,6 +90,7 @@ p { /* Estilo para párrafos p */
     align-items: center;
     justify-content: center;     /* Centra horizontalmente el contenido */
     margin-top: 10px;           /* Espacio entre el párrafo y el botón */
+    margin-bottom: 10px;
 }
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
