@@ -116,13 +116,13 @@ p { /* Estilo para párrafos p */
 
 .proyectos a { /* Estilo para los enlaces dentro de .proyectos */
     display: inline-block; /* Las imágenes se muestran en fila */
-    flex: 0 0 45%; /* Cada imagen ocupa el 45% del ancho del contenedor */
+    flex: 0 0 60%; /* Cada imagen ocupa el 45% del ancho del contenedor */
     scroll-snap-align: start; /* Alinea cada imagen con el inicio del contenedor al deslizar */
     text-align: center;
 }
 
 .proyectos nav a img { /* Estilo para las imágenes dentro de los enlaces en .proyectos */
-    width: 50%; /* Imágenes ocupan todo el ancho del contenedor */
+    width: 90%; /* Imágenes ocupan todo el ancho del contenedor */
     display: block;
     margin-bottom: 20px; /* Margen inferior de 1ex */
     border: 3px solid transparent; /* Borde de 3px invisible */
