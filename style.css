@@ -34,7 +34,7 @@ html { /* Aplica a todos los elementos y al elemento html */
 h1 { /* Estilo para el título h1 */
     font-size: 4em; /* Tamaño de fuente grande (4em) */
     font-weight: bold; /* Fuente en negrita */
-    color: #04916ebc; /* Color naranja */
+    color: #058263bc; /* Color naranja */
     text-shadow:
     1px 1px 1px rgb(2, 68, 55),
     2px 2px 1px rgb(2, 62, 38);
@@ -46,9 +46,9 @@ h1 { /* Estilo para el título h1 */
 }
 
 h2 { /* Estilo para subtítulos h2 */
-    font-size: 1.5em; /* Tamaño de fuente mediano (1.5em) */
+    font-size: 23px; /* Tamaño de fuente mediano (1.5em) */
     font-weight: lighter;
-    color: rgb(13, 101, 97);
+    color: rgb(10, 88, 85);
     text-align: center;
    
 font-family: "Caveat", cursive;
