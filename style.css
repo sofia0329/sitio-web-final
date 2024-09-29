@@ -19,7 +19,7 @@ html { /* Aplica a todos los elementos y al elemento html */
       grid-template-rows: auto auto auto; /* Define dos filas de altura automática */
       margin-left: 50px; /* Márgen izquierdo de 50px */
       margin-right: 50px; /* Márgen derecho de 50px */
-      column-gap: 10px; /* Espacio entre columnas de 20px */
+      column-gap: 20px; /* Espacio entre columnas de 20px */
       grid-template-areas: /* Define áreas específicas dentro del grid */
           "title" /* Título ocupa ambas columnas */
           "contenido" 
@@ -94,7 +94,7 @@ p { /* Estilo para párrafos p */
 .proyectos { /* Estilo para el contenedor con clase proyectos */
     display: flex; /* Activa el grid layout */
     justify-content: center; /* Alinea las imágenes al inicio */
-    flex-direction: column;
+    flex-direction: row;
     overflow-x: scroll; /* Activa el desplazamiento horizontal */
     scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
     gap: 30px; /* Espacio entre las imágenes */
