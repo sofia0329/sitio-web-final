@@ -100,9 +100,9 @@ p { /* Estilo para párrafos p */
 
 .proyectos { /* Estilo para el contenedor con clase proyectos */
     display: flex; /* Activa el grid layout */
-    justify-content: center; /* Alinea las imágenes al inicio */
+    justify-content: flex-start; /* Alinea las imágenes al inicio */
     flex-direction: row;
-    overflow-x: scroll; /* Activa el desplazamiento horizontal */
+    overflow-x: auto; /* Activa el desplazamiento horizontal */
     scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
     gap: 30px; /* Espacio entre las imágenes */
     height: 250px; /* Altura del contenedor ajustada */
