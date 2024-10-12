@@ -108,7 +108,7 @@ p { /* Estilo para párrafos p */
     height: 250px; /* Altura del contenedor ajustada */
     align-items: center; /* Alinea las imágenes al fondo */
     padding-bottom: 20px; /* Espacio en la parte inferior */
-    width: 50%; /* Que ocupe todo el ancho */
+    width: 100%; /* Que ocupe todo el ancho */
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
     margin-top: 10px; 
