@@ -2,199 +2,153 @@ html { /* Aplica a todos los elementos y al elemento html */
     box-sizing: border-box; /* Incluye padding y border en el tamaño total */
     font-family: 'Open Sans', sans-serif; /* Define 'Open Sans' como la fuente base */
   }
-  
-  html, body { /* Estilos para el html y el body */
-      margin: 0; /* Elimina el margen por defecto */
-      padding: 0; /* Elimina el padding por defecto */
-        background-color: #05866db7; /* Color de fondo */
-        background-image: radial-gradient(circle, rgba(12, 100, 85, 0.252) 20%, transparent 20%);
-        background-size: 35px 45px; /* Tamaño de cada círculo */
-        background-position: 0 0; /* Posición inicial */
-        height: 30vh; /* Altura completa de la ventana */
-  }
-  
-  main { /* Estilo para el elemento main */
-      display: grid; /* Activa el grid layout */
-      grid-template-columns: 1fr; /* Define una columnas con proporciones 1:2 */
-      grid-template-rows: auto auto auto; /* Define dos filas de altura automática */
-      margin-left: 50px; /* Márgen izquierdo de 50px */
-      margin-right: 50px; /* Márgen derecho de 50px */
-      column-gap: 20px; /* Espacio entre columnas de 20px */
-      grid-template-areas: /* Define áreas específicas dentro del grid */
-          "title" /* Título ocupa ambas columnas */
-          "contenido" 
-          "proyectos"; /* Contenido y proyectos ocupan cada una una columna */
-          
-  }
-  h1, h2, p {
-    text-align: center; /* Centra todo el texto */
+ 
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-
-h1 { /* Estilo para el título h1 */
-    font-size: 4em; /* Tamaño de fuente grande (4em) */
-    font-weight: bold; /* Fuente en negrita */
-    color: #058263bc; /* Color naranja */
-    text-shadow:
-    1px 1px 1px rgb(2, 68, 55),
-    2px 2px 1px rgb(2, 62, 38);
-  text-align: center;
-
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #05866db7;
+    background-image: radial-gradient(circle, rgba(12, 100, 85, 0.252) 20%, transparent 20%);
+    background-size: 35px 45px;
+    height: 30vh;
 }
 
-h2 { /* Estilo para subtítulos h2 */
-    font-size: 23px; /* Tamaño de fuente mediano (1.5em) */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    row-gap: 20px; /* Espacio vertical entre las áreas del grid */
+    grid-template-areas:
+        "title"
+        "contenido"
+        "proyectos";
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #058263bc;
+    text-shadow: 1px 1px 1px rgb(2, 68, 55), 2px 2px 1px rgb(2, 62, 38);
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 23px;
     font-weight: lighter;
     color: rgb(10, 88, 85);
-    text-align: center;
-   
-font-family: "Caveat", cursive;
-font-style: normal
-
+    font-family: "Caveat", cursive;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; 
+    width: 100%;
     text-align: center;
 }
 
-p { /* Estilo para párrafos p */
-    font-size: 18px; /* Tamaño de fuente de 18px */
-    text-align: center;
+p {
+    font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 30px;
-
     font-family: "Gowun Batang", serif;
     font-weight: 700;
-    font-style: normal;
-}
-.title { /* Estilo para el elemento con clase title */
-    grid-area: title; /* Asigna este elemento al área 'title' */
-    padding-left: 30px; /* Padding izquierdo de 30px */
 }
 
-.subtitle { /* Estilo para el elemento con clase title */
-    grid-area: title; /* Asigna este elemento al área 'title' */
-    padding-left: 30px; /* Padding izquierdo de 30px */
-}
-
-.content { /* Estilo para el elemento con clase content */
-    
-    text-align: center; /* Justifica el texto */
-    
+.title {
+    grid-area: title;
+    padding-left: 30px;
 }
 
 .button-container {
-    display: flex;               /* Activa el flexbox */
+    display: flex;
     align-items: center;
-    justify-content: center;     /* Centra horizontalmente el contenido */
-    margin-top: 10px;           /* Espacio entre el párrafo y el botón */
-    margin-bottom: 20px;
-    display: inline-block; /* Asegúrate de que el enlace se comporte como un bloque en línea */
+    justify-content: center;
+    margin: 0; /* Eliminado espacio extra */
 }
 
-.proyectos { /* Estilo para el contenedor con clase proyectos */
-    display: flex; /* Activa el grid layout */
-    justify-content: flex-start; /* Alinea las imágenes al inicio */
+.proyectos {
+    display: flex;
+    justify-content: flex-start;
     flex-direction: row;
-    overflow-x: auto; /* Activa el desplazamiento horizontal */
-    scroll-snap-type: x mandatory; /* Permite un desplazamiento suave */
-    gap: 30px; /* Espacio entre las imágenes */
-    height: 250px; /* Altura del contenedor ajustada */
-    align-items: center; /* Alinea las imágenes al fondo */
-    padding-bottom: 20px; /* Espacio en la parte inferior */
-    width: 100%; /* Que ocupe todo el ancho */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 30px;
+    height: 250px;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0); /* Fondo semitransparente */
-    margin-top: 10px; 
-
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 10px;
 }
 
-.proyectos nav { /* Estilo para el elemento nav dentro de .proyectos */
-    display: contents; /* Los hijos se comportan como si estuvieran directamente en el grid */
+.proyectos nav {
+    display: contents;
 }
 
-.proyectos a { /* Estilo para los enlaces dentro de .proyectos */
-    display: inline-block; /* Las imágenes se muestran en fila */
-    flex: 45%; /* Cada imagen ocupa el 45% del ancho del contenedor */
-    scroll-snap-align: start; /* Alinea cada imagen con el inicio del contenedor al deslizar */
+.proyectos a {
+    display: inline-block;
+    flex: 45%;
+    scroll-snap-align: start;
     text-align: center;
 }
 
-.proyectos nav a img { /* Estilo para las imágenes dentro de los enlaces en .proyectos */
-    width: 90%; /* Imágenes ocupan todo el ancho del contenedor */
+.proyectos nav a img {
+    width: 90%;
     display: block;
-    margin-bottom: 20px; /* Margen inferior de 1ex */
-    border: 3px solid transparent; /* Borde de 3px invisible */
+    border: 3px solid transparent;
 }
 
-.proyectos nav a:hover img { /* Estilo hover para las imágenes en .proyectos */
-    filter: blur(5px); /* Desenfoque de 5px al pasar el ratón */
-    opacity: 90%; /* Reducción de la opacidad al 90% */
+.proyectos nav a:hover img {
+    filter: blur(5px);
+    opacity: 90%;
 }
-.container {
-    display: flex;              /* Activa el flexbox */
-    flex-direction: column;     /* Organiza los elementos en columna */
-    align-items: center;        /* Centra horizontalmente */
-    height: 100vh;             /* Altura del contenedor */
-}
-
-.content {
-    text-align: center; /* Centra el texto dentro del contenido */
-}
-
 
 .box {
     border-style: solid;
     border-width: 1px;
     border-radius: 30%;
     display: flex;
-    justify-content: center;      /* Centra el texto horizontalmente */
-    align-items: center;         /* Centra el texto verticalmente */
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     background-color: #0dd3ac;
-    transition:
-      width 2s,
-      height 2s,
-      background-color 2s,
-      rotate 2s;
+    font-family: 'Caveat', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(2, 54, 31);
+    padding-bottom: 5px;
+    transition: width 2s, height 2s, background-color 2s, rotate 2s;
+}
 
-         /* Cambiar la tipografía del botón */
-    font-family: 'Caveat', cursive; /* Aquí defines la nueva fuente */
-    font-size: 16px; /* Ajusta el tamaño de la fuente según prefieras */
-    font-weight: bold; /* Cambia el grosor de la fuente si es necesario */
-    color: rgb(2, 54, 31); /* Cambia el color del texto del botón */
-    padding-bottom: 5px; /* Espacio debajo del texto en el botón */
-  }
-
-  
-  .box:hover {
+.box:hover {
     background-color: #07634b;
     width: 130px;
     height: 130px;
     rotate: 180deg;
-  }
-  
+}
 
-@media (max-width: 900px) { /* Estilo responsivo para pantallas pequeñas */
-    main { /* Ajustes en el elemento main */
-        display: grid; /* Activa el grid layout */
-        grid-template-columns: 1fr; /* Una sola columna */
-        grid-template-rows: auto auto auto; /* Tres filas automáticas */
-        grid-template-areas: /* Reorganiza las áreas del grid */
-            "title" /* Título ocupa la primera fila */
-            "contenido" /* Contenido ocupa la segunda fila */
-            "proyectos"; /* Proyectos ocupa la tercera fila */
-        margin: 0 10px; /* Márgenes laterales reducidos a 10px */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        margin: 0 10px;
     }
-    
-    h1 { /* Ajustes en el título h1 */
-        font-size: 3em; /* Reduce el tamaño de fuente a 3em */
+
+    h1 {
+        font-size: 3em;
     }
 }
