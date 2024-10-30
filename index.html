@@ -5,97 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio Web Imagen Escrita</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Enlaza la hoja de estilos CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+
 <body>
 
-      <!-- Contenedor principal -->
-      <main>
+    <!-- Contenedor principal -->
+    <main>
 
         <!-- Título principal -->
         <div class="title">
             <h1>Imagen Escrita 2024</h1>
         </div>
 
-          <!-- Título secundario -->
-          <div class="subtitle">
+        <!-- Título secundario -->
+        <div class="subtitle">
             <h2>Sofía Vera</h2>
         </div>
 
+        <!-- Contenedor de párrafos -->
+        <div class="container">
+            <!-- Párrafo descriptivo -->
+            <p>En este sitio se encuentran mis proyectos realizados durante el
+                semestre, estos se centran en la intersección entre diseño,
+                programación y arte generativo. Utilizando p5.js como herramienta principal.
+            </p>
+        </div>
 
-
-        
-
-            <!-- Contenedor texto y botón  -->
-             <div class="container">
-           
-
-                <!-- párrafo -->
-                <p>En este sitio se encuentran mis proyectos realizados durante el
-                    semestre, estos se centran en la intersección entre diseño, 
-                    programación y arte generativo. Utilizando p5.js como herramienta principal. 
-                    </p>
-
-                     <!--contrenerdor boton-->
-                
-                   
-                       
-                     <a href="https://wiki.ead.pucv.cl/Imagen_Escrita_2024#Clase_5:_Funciones_y_Recursi%C3%B3n" target="_blank">
-                        <div class="button container">
-                        <div class="box">Proyecto en la wiki</div>
-                    </a>
-    
+        <!-- Contenedor del botón -->
+        <a href="https://wiki.ead.pucv.cl/Imagen_Escrita_2024#Clase_5:_Funciones_y_Recursi%C3%B3n" target="_blank">
+            <div class="button container">
+                <div class="box">Proyecto en la wiki</div>
             </div>
-            </div>
-            
-          
-    
-        
-    
-                <!--Contenedor proyectos-->
+        </a>
+
+        <!-- Contenedor de proyectos -->
+        <div id="right">
+            <div class="proyectos-container">
                 <div class="proyectos">
-    
                     <nav>
-    
-                        <!--imagenes con enlace a sketch-->
-                    
+                        <!-- Enlaces a los proyectos -->
                         <a href="tareas/tarea1/index.html" target="_blank">
-                            <img src="imagenes/Img1 (.jpg).jpg"> Encargo 1
+                            <img src="imagenes/Img1 (.jpg).jpg" alt="Encargo 1"> Encargo 1
                         </a>
                         <a href="tareas/tarea2/index.html" target="_blank">
-                            <img src="imagenes/img2.jpg"> Encargo 2
+                            <img src="imagenes/img2.jpg" alt="Encargo 2"> Encargo 2
                         </a>
                         <a href="tareas/tarea3/index.html" target="_blank">
-                            <img src="imagenes/img3 .jpg.jpg"> Encargo 3
+                            <img src="imagenes/img3.jpg" alt="Encargo 3"> Encargo 3
                         </a>
                         <a href="tareas/tarea4/index.html" target="_blank">
-                            <img src="imagenes/img4.jpg"> Encargo 4
+                            <img src="imagenes/img4.jpg" alt="Encargo 4"> Encargo 4
                         </a>
                         <a href="tareas/tarea5/index.html" target="_blank">
-                            <img src="imagenes/img5.jpg"> Encargo 5
+                            <img src="imagenes/img5.jpg" alt="Encargo 5"> Encargo 5
                         </a>
-                  
-                    <a href="tareas/tarea6/index.html" target="_blank">
-                        <img src="imagenes/img6.jpg"> Encargo 6  
-                    </a>
-                    
+                        <a href="tareas/tarea6/index.html" target="_blank">
+                            <img src="imagenes/img6.jpg" alt="Encargo 6"> Encargo 6  
+                        </a>
                     </nav>
-    
                 </div>
-    
             </div>
-    
-        </main>
-    
-    </body>
-    
-    </html>
+            <!-- Botones para navegar entre proyectos -->
+            <button class="prev">◀</button>
+            <button class="next">▶</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script> <!-- Enlaza el archivo JavaScript -->
+</body>
+
+</html>
