@@ -4,114 +4,151 @@ html { /* Aplica a todos los elementos y al elemento html */
   }
  
 
-/* Estilos generales */
 html {
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-    font-family: 'Open Sans', sans-serif; /* Define 'Open Sans' como la fuente base */
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
-    margin: 0; /* Elimina el margen por defecto */
-    padding: 0; /* Elimina el padding por defecto */
-    background-color: #05866db7; /* Color de fondo */
-    background-image: radial-gradient(circle, rgba(12, 100, 85, 0.252) 20%, transparent 20%); /* Fondo con gradiente */
-    background-size: 35px 45px; /* Tamaño de cada círculo */
-    background-position: 0 0; /* Posición inicial */
-    height: 100vh; /* Altura completa de la ventana */
+    margin: 0;
+    padding: 0;
+    background-color: #05866db7;
+    background-image: radial-gradient(circle, rgba(12, 100, 85, 0.252) 20%, transparent 20%);
+    background-size: 35px 45px;
+    height: 30vh;
 }
 
 main {
-    display: grid; /* Activa el grid layout */
-    grid-template-columns: 1fr; /* Una columna */
-    grid-template-rows: auto auto auto; /* Filas automáticas */
-    margin-left: 50px; /* Márgen izquierdo de 50px */
-    margin-right: 50px; /* Márgen derecho de 50px */
-    column-gap: 20px; /* Espacio entre columnas de 20px */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    row-gap: 20px; /* Espacio vertical entre las áreas del grid */
+    grid-template-areas:
+        "title"
+        "contenido"
+        "proyectos";
 }
 
 h1, h2, p {
-    text-align: center; /* Centra todo el texto */
+    text-align: center;
 }
 
 h1 {
-    font-size: 4em; /* Tamaño de fuente grande */
-    font-weight: bold; /* Negrita */
-    color: #058263bc; /* Color de texto */
-    text-shadow: 1px 1px 1px rgb(2, 68, 55), 2px 2px 1px rgb(2, 62, 38); /* Sombra del texto */
-    font-family: "DM Serif Text", serif; /* Fuente específica */
+    font-size: 4em;
+    font-weight: bold;
+    color: #058263bc;
+    text-shadow: 1px 1px 1px rgb(2, 68, 55), 2px 2px 1px rgb(2, 62, 38);
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 23px; /* Tamaño de fuente mediano */
-    font-weight: lighter; /* Peso de la fuente ligero */
-    color: rgb(10, 88, 85); /* Color del texto */
-    font-family: "Caveat", cursive; /* Fuente específica */
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(6, 63, 62);
+    font-family: "Caveat", cursive;
 }
 
 .container {
-    display: flex; /* Activa el flexbox */
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: center; /* Centra horizontalmente */
-    width: 100%; /* Que ocupe todo el ancho */
-    text-align: center; /* Centra el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
 }
 
 p {
-    font-size: 18px; /* Tamaño de fuente de 18px */
-    text-align: center; /* Centra el texto */
-    margin-top: 20px; /* Margen superior */
-    margin-bottom: 30px; /* Margen inferior */
-    font-family: "Gowun Batang", serif; /* Fuente específica */
-    font-weight: 700; /* Peso de la fuente */
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
 }
 
 .title {
-    grid-area: title; /* Asigna este elemento al área 'title' */
-    padding-left: 30px; /* Padding izquierdo de 30px */
-}
-
-.subtitle {
-    grid-area: title; /* Asigna este elemento al área 'title' */
-    padding-left: 30px; /* Padding izquierdo de 30px */
+    grid-area: title;
+    padding-left: 30px;
 }
 
 .button-container {
-    display: flex; /* Activa el flexbox */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    margin-top: 10px; /* Espacio entre el párrafo y el botón */
-    margin-bottom: 20px; /* Espacio inferior */
-    display: inline-block; /* Asegura que el enlace se comporte como un bloque en línea */
-}
-
-.proyectos-container {
-    display: flex; /* Usar flexbox para alinear los proyectos */
-    align-items: center; /* Alinea verticalmente */
-    overflow: hidden; /* Oculta el contenido que desborda */
-    width: 100%; /* Ancho completo */
-    position: relative; /* Para posicionar los botones */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Eliminado espacio extra */
 }
 
 .proyectos {
-    display: flex; /* Hacer que los proyectos se alineen en una fila */
-    transition: transform 0.5s ease; /* Animación para el desplazamiento */
-    width: calc(100% * 3); /* Ancho total para 3 columnas */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 30px;
+    height: 250px;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 10px;
 }
 
 .proyectos nav {
-    display: flex; /* Para que las imágenes se alineen en fila */
+    display: contents;
 }
 
 .proyectos a {
-    width: 33.33%; /* Cada enlace ocupa un tercio del ancho del contenedor */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño */
+    display: inline-block;
+    flex: 45%;
+    scroll-snap-align: start;
+    text-align: center;
 }
 
 .proyectos nav a img {
-    width: 100%; /* Las imágenes ocuparán el 100% de su contenedor */
-    display: block; /* Asegura que no haya espacio extra debajo de la imagen */
-    margin-bottom: 20px; /* Margen inferior */
-    border: 3px solid transparent; /* Borde de 3px invisible */
+    width: 90%;
+    display: block;
+    border: 3px solid transparent;
 }
 
-/* Estilos para los botones de navegación */
+.proyectos nav a:hover img {
+    filter: blur(5px);
+    opacity: 90%;
+}
+
+.box {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #0dd3ac;
+    font-family: 'Caveat', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(2, 54, 31);
+    padding-bottom: 5px;
+    transition: width 2s, height 2s, background-color 2s, rotate 2s;
+}
+
+.box:hover {
+    background-color: #07634b;
+    width: 130px;
+    height: 130px;
+    rotate: 180deg;
+}
+
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
