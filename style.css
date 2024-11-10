@@ -12,7 +12,7 @@ html {
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #05866db7;
+    background-color: #33ad95b7;
     background-image: radial-gradient(circle, rgba(12, 100, 85, 0.252) 20%, transparent 20%);
     background-size: 35px 45px;
     height: 30vh;
@@ -151,4 +151,4 @@ p {
     h1 {
         font-size: 3em;
     }
-}
+}  
